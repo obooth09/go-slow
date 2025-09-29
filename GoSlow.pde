@@ -11,9 +11,6 @@ void setup() {
 
   // Your high-level code goes here
    goSlow(50);
-
-
-
   // End your high-level code here
 
   // This shows where the Turtle ends up
@@ -34,6 +31,8 @@ void goSlow(int size){
   wTransition(size);
   letterW(size);
 }
+
+//make methods for the letters
 void letterG (int size) {
   t.penDown();
   t.forward(size / 2);
@@ -96,6 +95,7 @@ void letterW(int size) {
   t.forward(size);
 }
 
+//make transitions for each letter
 void goTransition(int size) {
   t.jump(size,0);
   t.right(90);
